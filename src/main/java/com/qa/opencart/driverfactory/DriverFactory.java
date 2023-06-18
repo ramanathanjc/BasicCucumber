@@ -29,7 +29,7 @@ public class DriverFactory {
 	public WebDriver init_driver(String browser, Properties prop) {
 		this.prop = prop;
 		optionsManager = new OptionsManager(prop);
-		System.out.println("The Browser value is :" + browser);
+		System.out.println("The Browser value is ::" + browser);
 		if (browser.equals("chrome")) {
 
 			if (Boolean.parseBoolean(prop.getProperty("Remote"))) {
